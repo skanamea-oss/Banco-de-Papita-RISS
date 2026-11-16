@@ -142,49 +142,49 @@
         <header class="border-b border-darkBorder bg-darkCard/95 sticky top-0 z-30 backdrop-blur-md shadow-lg shadow-black/30">
             <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-0 sm:h-20 flex items-center justify-between gap-2 sm:gap-3">
                 
-                <!-- Identidad de Marca Banco de Papita Riss con el Logo Oficial -->
-                <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
-                    <div id="brandLogoContainer" onclick="openCloudSettingsModal()" class="w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-brandCream border-2 border-brandGold pink-ring flex items-center justify-center overflow-hidden shrink-0 cursor-pointer transition-transform hover:scale-105" title="Banco de Papita Riss — Clic para personalizar logo o nube">
+                <!-- Identidad de Marca Banco de Papita Riss Optimizada para Android -->
+                <div class="flex items-center gap-2.5 sm:gap-3.5 flex-1 min-w-0">
+                    <div id="brandLogoContainer" onclick="openCloudSettingsModal()" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-brandCream border-2 border-brandGold pink-ring flex items-center justify-center overflow-hidden shrink-0 cursor-pointer transition-transform hover:scale-105" title="Banco de Papita Riss — Clic para personalizar logo o nube">
                         <img id="customBrandLogoImg" src="ec6c412a964edaa1d02a3bfc842c0493.jpg" alt="Logo Banco de Papita Riss" class="w-full h-full object-cover object-[42%_34%] scale-110">
                     </div>
-                    <div class="min-w-0">
-                        <div class="flex items-center gap-1.5 sm:gap-2">
-                            <h1 id="brandHeaderName" class="text-sm sm:text-xl font-extrabold tracking-tight text-brandCream truncate">
+                    <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                            <h1 id="brandHeaderName" class="text-[15px] leading-tight sm:text-xl font-extrabold tracking-tight text-brandCream">
                                 Banco de <span class="text-brandGold">Papita Riss</span>
                             </h1>
                             <span class="hidden md:inline-block px-2 py-0.5 rounded-full bg-brandTerracotta/25 border border-brandGold/40 text-brandGoldLight text-[10px] font-bold tracking-wide">
                                 EUROS (€)
                             </span>
                         </div>
-                        <p id="brandHeaderSlogan" class="hidden sm:block text-xs text-pink-200/75 font-mono tracking-tight truncate">
+                        <p id="brandHeaderSlogan" class="text-[10px] sm:text-xs text-pink-200/75 font-mono tracking-tight truncate mt-0.5">
                             AHORROS • METAS • SEVILLA 🇪🇸
                         </p>
                     </div>
                 </div>
 
-                <!-- Hora Sevilla, Indicador Moneda Euros, Estado Nube y Herramientas -->
-                <div class="flex items-center gap-2 sm:gap-3">
-                    <!-- Hora Exacta Sevilla, España -->
+                <!-- Hora Sevilla, Indicador Moneda Euros, Estado Nube (PC) y Herramientas -->
+                <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+                    <!-- Hora Exacta Sevilla, España (PC) -->
                     <div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-darkBorder bg-darkBg/90 text-pink-200 text-xs font-mono" title="Hora oficial en Sevilla, España (Europe/Madrid)">
                         <i class="fa-regular fa-clock text-brandGold text-xs"></i>
                         <span id="spainClockDisplay">--/--/---- • --:--:-- SEVILLA</span>
                     </div>
 
-                    <!-- Badge Moneda Euros (EUR) -->
-                    <div class="px-3 py-1.5 rounded-xl border border-brandGold/40 bg-brandTerracotta/20 text-brandCream text-xs font-bold font-mono flex items-center gap-1.5 shadow-inner">
-                        <span class="text-sm">🇪🇸</span> <span class="hidden sm:inline">Euros</span> (€)
+                    <!-- Badge Moneda Euros (EUR) Compacto en Celular -->
+                    <div class="px-2.5 sm:px-3 py-1.5 rounded-xl border border-brandGold/40 bg-brandTerracotta/20 text-brandCream text-xs font-bold font-mono flex items-center gap-1 shadow-inner">
+                        <span class="text-xs sm:text-sm">🇪🇸</span> <span class="hidden sm:inline">Euros</span> (€)
                     </div>
 
-                    <!-- Indicador de Sincronización en la Nube -->
-                    <button id="cloudStatusBadge" onclick="openCloudSettingsModal()" class="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 rounded-xl border border-pink-500/30 bg-pink-500/10 text-pink-200 text-xs font-semibold hover:bg-pink-500/20 transition-all cursor-pointer shrink-0" title="Configurar conexión Firebase / Nube">
+                    <!-- Indicador de Sincronización en la Nube (Solo en >= sm para no quitar espacio al nombre en celular) -->
+                    <button id="cloudStatusBadge" onclick="openCloudSettingsModal()" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-pink-500/30 bg-pink-500/10 text-pink-200 text-xs font-semibold hover:bg-pink-500/20 transition-all cursor-pointer shrink-0" title="Configurar conexión Firebase / Nube">
                         <span id="cloudStatusDot" class="w-2 h-2 rounded-full bg-pink-400 shrink-0"></span>
-                        <span id="cloudStatusText" class="font-mono text-[10px] sm:text-[11px] max-w-[72px] sm:max-w-none truncate">Modo Local</span>
+                        <span id="cloudStatusText" class="font-mono text-[11px]">Modo Local</span>
                     </button>
 
                     <!-- Menú de Herramientas -->
                     <div class="relative">
-                        <button id="settingsBtn" onclick="toggleSettingsMenu(event)" class="w-10 h-10 rounded-xl border border-darkBorder bg-darkBg hover:bg-darkHover flex items-center justify-center text-brandGold transition-all active:scale-95" title="Ajustes de Nube, Marca y Datos">
-                            <i class="fa-solid fa-gear"></i>
+                        <button id="settingsBtn" onclick="toggleSettingsMenu(event)" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-darkBorder bg-darkBg hover:bg-darkHover flex items-center justify-center text-brandGold transition-all active:scale-95" title="Ajustes de Nube, Marca y Datos">
+                            <i class="fa-solid fa-gear text-sm"></i>
                         </button>
                         <div id="settingsDropdown" class="absolute right-0 mt-2 w-64 bg-darkCard border border-darkBorder rounded-xl shadow-2xl p-2 hidden z-50">
                             <button onclick="openCloudSettingsModal(); closeSettingsMenu();" class="w-full text-left px-3 py-2 text-xs text-brandGoldLight hover:bg-darkHover rounded-lg flex items-center gap-2 font-semibold">
@@ -218,11 +218,17 @@
             </div>
         </header>
 
-        <!-- Barra móvil con Hora de Sevilla España -->
-        <div class="xl:hidden bg-darkBg/90 border-b border-darkBorder/70 px-4 py-1.5 flex items-center justify-center gap-2 text-[11px] font-mono text-pink-200/90">
-            <i class="fa-regular fa-clock text-brandGold"></i>
-            <span>Hora Sevilla, España:</span>
-            <span id="spainClockDisplayMobile" class="font-bold text-brandGoldLight">--/--/---- • --:--:--</span>
+        <!-- Barra secundaria móvil con Hora de Sevilla + Estado de Nube en Android -->
+        <div class="xl:hidden bg-darkBg/95 border-b border-darkBorder/70 px-3 py-1.5 flex items-center justify-between sm:justify-center gap-2 text-[10px] sm:text-[11px] font-mono text-pink-200/90">
+            <div class="flex items-center gap-1.5 truncate">
+                <i class="fa-regular fa-clock text-brandGold shrink-0"></i>
+                <span class="hidden xs:inline">Sevilla:</span>
+                <span id="spainClockDisplayMobile" class="font-bold text-brandGoldLight truncate">--/--/---- • --:--:--</span>
+            </div>
+            <button id="cloudStatusBadgeMobile" onclick="openCloudSettingsModal()" class="sm:hidden flex items-center gap-1.5 px-2 py-0.5 rounded-lg border border-pink-500/30 bg-pink-500/10 text-pink-200 font-semibold shrink-0">
+                <span id="cloudStatusDotMobile" class="w-1.5 h-1.5 rounded-full bg-pink-400"></span>
+                <span id="cloudStatusTextMobile" class="text-[10px] max-w-[115px] truncate">Modo Local</span>
+            </button>
         </div>
 
         <!-- Banner de Aviso 24 Horas para Copia Local -->
@@ -253,17 +259,17 @@
             </div>
         </div>
 
-        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
             
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-darkBorder/80 pb-4 gap-3">
                 <div>
-                    <h2 class="text-2xl font-extrabold tracking-tight text-brandCream flex items-center gap-2">
+                    <h2 class="text-xl sm:text-2xl font-extrabold tracking-tight text-brandCream flex items-center gap-2 flex-wrap">
                         Panel Financiero
                         <span id="currentCurrencyBadge" class="text-xs px-2.5 py-0.5 rounded-md bg-brandTerracotta/25 text-brandGoldLight border border-brandGold/40 font-mono">
                             Euros (EUR)
                         </span>
                     </h2>
-                    <p class="text-xs text-pink-200/75">Control personal de ingresos, gastos, cobros y ahorros en Euros del <strong class="text-brandGold">Banco de Papita Riss</strong>.</p>
+                    <p class="text-xs text-pink-200/75 mt-0.5">Control personal de ingresos, gastos, cobros y ahorros en Euros del <strong class="text-brandGold">Banco de Papita Riss</strong>.</p>
                 </div>
 
                 <button onclick="openModalTransaction()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-gradient-to-r from-brandTerracotta via-pink-500 to-fuchsia-500 hover:from-pink-600 hover:to-fuchsia-400 text-white font-bold text-sm shadow-lg shadow-pink-500/30 border border-brandGold/40 transition-all flex items-center justify-center gap-2 active:scale-95">
@@ -281,7 +287,7 @@
                             <i class="fa-solid fa-arrow-up text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-bold font-mono text-emerald-300 truncate" id="kpiIncome">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-bold font-mono text-emerald-300 truncate" id="kpiIncome">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/50 mt-1">Entradas totales</p>
                 </div>
 
@@ -292,7 +298,7 @@
                             <i class="fa-solid fa-arrow-down text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-bold font-mono text-rose-300 truncate" id="kpiExpense">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-bold font-mono text-rose-300 truncate" id="kpiExpense">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/50 mt-1">Egresos totales</p>
                 </div>
 
@@ -303,7 +309,7 @@
                             <i class="fa-solid fa-piggy-bank text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-bold font-mono text-brandCream truncate" id="kpiCashBalance">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-bold font-mono text-brandCream truncate" id="kpiCashBalance">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/50 mt-1">Ingresos − Gastos</p>
                 </div>
 
@@ -314,7 +320,7 @@
                             <i class="fa-solid fa-hand-holding-heart text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-bold font-mono text-blue-300 truncate" id="kpiReceivables">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-bold font-mono text-blue-300 truncate" id="kpiReceivables">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/50 mt-1">Saldos por cobrar</p>
                 </div>
 
@@ -325,7 +331,7 @@
                             <i class="fa-solid fa-file-invoice-dollar text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-bold font-mono text-amber-300 truncate" id="kpiDebts">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-bold font-mono text-amber-300 truncate" id="kpiDebts">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/50 mt-1">Deudas pendientes</p>
                 </div>
 
@@ -336,13 +342,13 @@
                             <i class="fa-solid fa-crown text-xs"></i>
                         </div>
                     </div>
-                    <div class="text-lg font-extrabold font-mono text-brandGoldLight truncate" id="kpiNetWorth">€ 0.00</div>
+                    <div class="text-base sm:text-lg font-extrabold font-mono text-brandGoldLight truncate" id="kpiNetWorth">€ 0.00</div>
                     <p class="text-[10px] text-pink-200/60 mt-1">Caja Libre − Deudas</p>
                 </div>
 
             </div>
 
-            <section class="glass-card rounded-2xl p-6 space-y-6">
+            <section class="glass-card rounded-2xl p-4 sm:p-6 space-y-6">
                 
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-darkBorder pb-4">
                     <div>
@@ -394,7 +400,7 @@
 
             </section>
 
-            <section class="glass-card rounded-2xl p-6 space-y-6">
+            <section class="glass-card rounded-2xl p-4 sm:p-6 space-y-6">
                 
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-darkBorder pb-4">
                     
@@ -461,7 +467,7 @@
         </main>
     </div>
 
-    <footer class="border-t border-darkBorder py-6 bg-darkCard/70 mt-12 text-center text-xs text-pink-200/65">
+    <footer class="border-t border-darkBorder py-6 bg-darkCard/70 mt-12 text-center text-xs text-pink-200/65 px-4">
         <p class="font-semibold text-brandCream">Banco de Papita Riss &copy; 2026 • <span class="text-brandGold">SEVILLA, ESPAÑA 🇪🇸</span></p>
         <p class="text-[11px] mt-1 text-pink-200/45">Control Financiero en Euros (€) sincronizado en la nube</p>
     </footer>
@@ -785,7 +791,6 @@
             setInterval(update, 1000);
         }
 
-        /* Genera un favicon circular nítido enfocado en la perrita con corona para la pestaña del navegador */
         function generateCircularTabFavicon(imageSource) {
             const img = new Image();
             img.crossOrigin = 'anonymous';
@@ -803,7 +808,6 @@
                     ctx.closePath();
                     ctx.clip();
 
-                    // Encuadre centrado en la cabecita y corona
                     const minSide = Math.min(img.width, img.height);
                     const cropSize = minSide * 0.72;
                     const sx = Math.max(0, (img.width * 0.42) - (cropSize / 2));
@@ -812,7 +816,6 @@
                     ctx.drawImage(img, sx, sy, cropSize, cropSize, 0, 0, size, size);
                     ctx.restore();
 
-                    // Borde rosa brillante alrededor del ícono de pestaña
                     ctx.beginPath();
                     ctx.arc(size / 2, size / 2, (size / 2) - 3, 0, Math.PI * 2);
                     ctx.lineWidth = 6;
@@ -824,9 +827,7 @@
                     const appleEl = document.getElementById('dynamicAppleIcon');
                     if (favEl) favEl.href = circularPng;
                     if (appleEl) appleEl.href = circularPng;
-                } catch (e) {
-                    // Si el navegador bloquea canvas local por CORS file://, mantiene el href directo de la imagen
-                }
+                } catch (e) {}
             };
             img.src = imageSource;
         }
@@ -988,26 +989,39 @@
             const badge = document.getElementById('cloudStatusBadge');
             const dot = document.getElementById('cloudStatusDot');
             const text = document.getElementById('cloudStatusText');
+
+            const badgeMobile = document.getElementById('cloudStatusBadgeMobile');
+            const dotMobile = document.getElementById('cloudStatusDotMobile');
+            const textMobile = document.getElementById('cloudStatusTextMobile');
+
             const modalPill = document.getElementById('modalCloudPill');
 
-            text.innerText = label;
+            if (text) text.innerText = label;
+            if (textMobile) textMobile.innerText = label;
+
             if (status === 'connected') {
-                badge.className = "flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl border border-emerald-400/40 bg-emerald-400/15 text-emerald-200 text-xs font-semibold hover:bg-emerald-400/25 transition-all cursor-pointer";
-                dot.className = "w-2 h-2 rounded-full bg-emerald-300 animate-pulse";
+                if (badge) badge.className = "hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-emerald-400/40 bg-emerald-400/15 text-emerald-200 text-xs font-semibold hover:bg-emerald-400/25 transition-all cursor-pointer shrink-0";
+                if (dot) dot.className = "w-2 h-2 rounded-full bg-emerald-300 animate-pulse shrink-0";
+                if (badgeMobile) badgeMobile.className = "sm:hidden flex items-center gap-1.5 px-2 py-0.5 rounded-lg border border-emerald-400/40 bg-emerald-400/15 text-emerald-200 font-semibold shrink-0";
+                if (dotMobile) dotMobile.className = "w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse";
                 if (modalPill) {
                     modalPill.className = "text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/20 text-emerald-200";
                     modalPill.innerText = `Conectado (${cloudConfig.spaceId})`;
                 }
             } else if (status === 'error') {
-                badge.className = "flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl border border-rose-400/40 bg-rose-400/15 text-rose-200 text-xs font-semibold hover:bg-rose-400/25 transition-all cursor-pointer";
-                dot.className = "w-2 h-2 rounded-full bg-rose-400";
+                if (badge) badge.className = "hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-rose-400/40 bg-rose-400/15 text-rose-200 text-xs font-semibold hover:bg-rose-400/25 transition-all cursor-pointer shrink-0";
+                if (dot) dot.className = "w-2 h-2 rounded-full bg-rose-400 shrink-0";
+                if (badgeMobile) badgeMobile.className = "sm:hidden flex items-center gap-1.5 px-2 py-0.5 rounded-lg border border-rose-400/40 bg-rose-400/15 text-rose-200 font-semibold shrink-0";
+                if (dotMobile) dotMobile.className = "w-1.5 h-1.5 rounded-full bg-rose-400";
                 if (modalPill) {
                     modalPill.className = "text-[10px] font-mono px-2 py-0.5 rounded bg-rose-400/20 text-rose-200";
                     modalPill.innerText = "Error de conexión";
                 }
             } else {
-                badge.className = "flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl border border-pink-400/30 bg-pink-400/10 text-pink-200 text-xs font-semibold hover:bg-pink-400/20 transition-all cursor-pointer";
-                dot.className = "w-2 h-2 rounded-full bg-pink-400";
+                if (badge) badge.className = "hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-pink-400/30 bg-pink-400/10 text-pink-200 text-xs font-semibold hover:bg-pink-400/20 transition-all cursor-pointer shrink-0";
+                if (dot) dot.className = "w-2 h-2 rounded-full bg-pink-400 shrink-0";
+                if (badgeMobile) badgeMobile.className = "sm:hidden flex items-center gap-1.5 px-2 py-0.5 rounded-lg border border-pink-400/30 bg-pink-400/10 text-pink-200 font-semibold shrink-0";
+                if (dotMobile) dotMobile.className = "w-1.5 h-1.5 rounded-full bg-pink-400";
                 if (modalPill) {
                     modalPill.className = "text-[10px] font-mono px-2 py-0.5 rounded bg-pink-400/20 text-pink-200";
                     modalPill.innerText = "Modo Local";
@@ -1389,9 +1403,9 @@
             const netWorthEl = document.getElementById('kpiNetWorth');
             netWorthEl.innerText = formatMoney(netWorth);
             if (netWorth < 0) {
-                netWorthEl.className = "text-lg font-extrabold font-mono text-rose-400 truncate";
+                netWorthEl.className = "text-base sm:text-lg font-extrabold font-mono text-rose-400 truncate";
             } else {
-                netWorthEl.className = "text-lg font-extrabold font-mono text-brandGoldLight truncate";
+                netWorthEl.className = "text-base sm:text-lg font-extrabold font-mono text-brandGoldLight truncate";
             }
 
             renderCharts();
@@ -1654,7 +1668,7 @@
                 if (tx.type === 'receivable') {
                     if (tx.status === 'pending') {
                         optionsCell = `
-                            <div class="flex items-center justify-center gap-1.5">
+                            <div class="flex items-center justify-center gap-1.5 flex-wrap">
                                 <button onclick="openModalPartial('${tx.id}', 'receivable')" class="px-2 py-1 rounded-lg bg-blue-400/20 hover:bg-accentBlue text-blue-300 hover:text-darkBg transition-all text-[11px] font-bold" title="Cobrar solo una parte">
                                     Cobrado Parcialmente
                                 </button>
@@ -1669,7 +1683,7 @@
                 } else if (tx.type === 'debt') {
                     if (tx.status === 'pending') {
                         optionsCell = `
-                            <div class="flex items-center justify-center gap-1.5">
+                            <div class="flex items-center justify-center gap-1.5 flex-wrap">
                                 <button onclick="openModalPartial('${tx.id}', 'debt')" class="px-2 py-1 rounded-lg bg-pink-500/20 hover:bg-brandGold text-brandGoldLight hover:text-darkBg transition-all text-[11px] font-bold" title="Pagar solo una parte">
                                     Deuda Pagada Parcialmente
                                 </button>
